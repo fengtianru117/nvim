@@ -7,9 +7,11 @@ M.general = {
   n = {
     -- [";"] = { ":", "command mode", opts = { nowait = true } },
     ["<C-u>"]={"10k","向上移动10行"},
+    ["<C-a>"]={"10j","向下移动10行"},
     ["<C-d>"]={"10j","向下移动10行"},
     -- ["*"] = {":keepjumps normal! mi*`i<CR>","防止*选中市默认向下一个跳"}
     ["*"] = {":keepjumps normal! mi*`i<CR>:let @/.='\\C'<CR>","防止*选中时默认向下一个跳,:let @/.='\\C'<CR> 表示大小写敏感"},
+    ["<leader>v"] = { "<C-w>v", "split window left" },
   },
 }
 

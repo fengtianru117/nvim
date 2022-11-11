@@ -56,6 +56,11 @@ return {
       }
     end,
   },
+
+  ["NvChad/nvterm"] = {
+    override_options = overrides.nvterm,
+  },
+
   -- lspsaga
   ["glepnir/lspsaga.nvim"] = {},
 
@@ -65,7 +70,7 @@ return {
 
   ["rcarriga/nvim-dap-ui"] = {},
 
-  ["mg979/vim-visual-multi"]={},
+  ["mg979/vim-visual-multi"] = {},
 
   -- ["iamcco/markdown-preview.nvim"] = {
   --   config = function()

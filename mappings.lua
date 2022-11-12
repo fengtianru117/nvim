@@ -12,6 +12,8 @@ M.general = {
     -- ["*"] = {":keepjumps normal! mi*`i<CR>","防止*选中市默认向下一个跳"}
     ["*"] = {":keepjumps normal! mi*`i<CR>:let @/.='\\C'<CR>","防止*选中时默认向下一个跳,:let @/.='\\C'<CR> 表示大小写敏感"},
     ["<leader>v"] = { "<C-w>v", "split window left" },
+    ["L"]={"$","行尾"},
+    ["H"]={"0","行首"},
   },
 }
 

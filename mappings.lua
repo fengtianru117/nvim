@@ -34,5 +34,36 @@ M.nvimtree = {
   },
 }
 
+M.tabufline = {
+  plugin = true,
+
+  n = {
+    -- cycle through buffers
+    ["<TAB>"] = {
+      function()
+        require("nvchad_ui.tabufline").tabuflineNext()
+      end,
+      "goto next buffer",
+    },
+
+    ["<S-Tab>"] = {
+      function()
+        require("nvchad_ui.tabufline").tabuflinePrev()
+      end,
+      "goto prev buffer",
+    },
+
+    -- pick buffers via numbers
+    ["<Bslash>"] = { "<cmd> TbufPick <CR>", "Pick buffer" },
+
+    -- close buffer + hide terminal buffer
+    ["<C-x>"] = {
+      function()
+        require("nvchad_ui.tabufline").close_buffer()
+      end,
+      "close buffer",
+    },
+  },
+}
 
 return M

@@ -20,10 +20,10 @@ M.mason = {
     "stylua",
 
     -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
+    -- "css-lsp",
+    -- "html-lsp",
+    -- "typescript-language-server",
+    -- "deno",
 
     -- golang stuff
     "gopls",
